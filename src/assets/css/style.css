@@ -39,7 +39,7 @@ body {
   padding: 100px 0px;
 }
 .media-elemental {
-  background-image: url(/static/media/app.e4ec6055.jpg);
+  background-image: url("../images/app.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,4 +57,42 @@ body {
 .content-section-2 {
   display: flex;
   justify-content: space-between;
+}
+
+/*Section 3*/
+.section-3 {
+  padding: 100px 0px;
+}
+.banner-left {
+  background-image: url("../images/workout.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 400px;
+  width: 50%;
+}
+.banner-right {
+  background-image: url("../images/food.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 400px;
+  width: 50%;
+}
+
+.footer {
+  height: 70px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
 }

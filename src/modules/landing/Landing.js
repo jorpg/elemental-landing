@@ -4,6 +4,7 @@ import ButtonPrimary from "../../components/button-primary";
 import LogoRP from "../../assets/images/rp.png";
 import LogoSugarwod from "../../assets/images/sugarwod.png";
 import LogoTelegram from "../../assets/images/telegram.png";
+import LogoText from "../../assets/images/elemental-fonts.svg";
 
 class Landing extends Component {
   render() {
@@ -13,7 +14,9 @@ class Landing extends Component {
         <div className="header">
           <div className="text-center">
             <img src={Logo} alt="logo" className="img-fluid" width="70%" />
-            <p>Transforma tu cuerpo y tu mente en 3 meses</p>
+            <div>
+              <span>Transforma tu cuerpo y tu mente en 3 meses</span>
+            </div>
           </div>
           <h1>Que deseas?</h1>
           <div className="row">
@@ -110,6 +113,32 @@ class Landing extends Component {
               <div>
                 <ButtonPrimary></ButtonPrimary>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex">
+          <div className="banner-left">
+            <h1>hola</h1>
+          </div>
+
+          <div className="banner-right">
+            <h1>hola</h1>
+          </div>
+        </div>
+
+        <div className="footer">
+          <div className="container">
+            <div className="d-flex">
+              <img
+                src={LogoText}
+                alt="Elemental"
+                className="img-fluid"
+                width="250"
+              />
+              <p>Copyright Elemental Platform</p>
+              <a href="#">Quienes somos</a>
+              <a href="#">Terminos & Condiciones</a>
             </div>
           </div>
         </div>
