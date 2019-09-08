@@ -7,6 +7,12 @@ import LogoSugarwod from "../../assets/images/sugarwod.png";
 import LogoTelegram from "../../assets/images/telegram.png";
 import LogoText from "../../assets/images/elemental-fonts.svg";
 
+import { Icon } from "react-icons-kit";
+import { facebook } from "react-icons-kit/fa/facebook";
+import { instagram } from "react-icons-kit/fa/instagram";
+import { share2 } from "react-icons-kit/icomoon/share2";
+import ButtonPrimaryWhite from "../../components/button-primary-white";
+
 class Landing extends Component {
   render() {
     return (
@@ -26,15 +32,15 @@ class Landing extends Component {
               </div>
             </div>
             <h1 className="title-opt">Que deseas?</h1>
-            <div className="row text-center font-weight-bold mt-4 mb-5">
-              <div className="col-4">
-                <h5 className="m-0">BAJAR DE PESO</h5>
+            <div className="content-text-opt text-center">
+              <div>
+                <h5 className="text-opt">BAJAR DE PESO</h5>
               </div>
-              <div className="col-4">
-                <h5 className="m-0">GANAR MASA MUSCULAR</h5>
+              <div>
+                <h5 className="text-opt">GANAR MASA MUSCULAR</h5>
               </div>
-              <div className="col-4">
-                <h5 className="m-0">MANTENERTE</h5>
+              <div>
+                <h5 className=" text-opt">MANTENERTE</h5>
               </div>
             </div>
             <div className="text-center">
@@ -70,32 +76,14 @@ class Landing extends Component {
             </div>
             <div className="row text-center content-sponsor">
               <div className="col p-sponsor">
-                <img
-                  src={LogoRP}
-                  alt="RP"
-                  className="img-fluid mb-4"
-                  width="120"
-                />
-              </div>
-              <div className="col divider-center">
-                <img
-                  src={LogoSugarwod}
-                  alt="RP"
-                  className="img-fluid mb-4"
-                  width="180"
-                />
-              </div>
-              <div className="col p-sponsor">
-                <img
-                  src={LogoTelegram}
-                  alt="RP"
-                  className="img-fluid mb-4"
-                  width="180"
-                />
-              </div>
-            </div>
-            <div className="row text-center">
-              <div className="col p-sponsor">
+                <div>
+                  <img
+                    src={LogoRP}
+                    alt="RP"
+                    className="img-fluid mb-4"
+                    width="120"
+                  />
+                </div>
                 <small className="text-center text-sponsor">
                   RP Diet, para realizar un conteo de macros eficiente,enfocado
                   en tu meta personal, bien sea perdida de peso,ganancia de masa
@@ -107,6 +95,14 @@ class Landing extends Component {
                 </small>
               </div>
               <div className="col divider-center">
+                <div>
+                  <img
+                    src={LogoSugarwod}
+                    alt="RP"
+                    className="img-fluid mb-4"
+                    width="180"
+                  />
+                </div>
                 <small className="text-center text-sponsor">
                   Sugarwod, que nos ayudara a entregarte una rutina
                   deentrenamiento adaptadas a tus necesidades y a tus
@@ -119,6 +115,14 @@ class Landing extends Component {
                 </small>
               </div>
               <div className="col p-sponsor">
+                <div>
+                  <img
+                    src={LogoTelegram}
+                    alt="RP"
+                    className="img-fluid mb-3"
+                    width="160"
+                  />
+                </div>
                 <small className="text-center text-sponsor">
                   Telegram sera el canal para darte soporte motivación yayuda
                   cuando la necesites porque detrás de todo este sistema esta un
@@ -136,7 +140,7 @@ class Landing extends Component {
           <div className="container">
             <div className="content-section-2">
               <div>
-                <h3>
+                <h3 className="title-section-2">
                   Estas preparados para dar <br /> un paso adelante a tus metas
                 </h3>
                 <div>
@@ -146,8 +150,8 @@ class Landing extends Component {
                   </small>
                 </div>
               </div>
-              <div>
-                <ButtonPrimary></ButtonPrimary>
+              <div className="my-4">
+                <ButtonPrimaryWhite></ButtonPrimaryWhite>
               </div>
             </div>
           </div>
@@ -156,7 +160,7 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col d-flex justify-content-center align-items-center">
-                <h1 className="title-section">
+                <h1 className="title-section mb-5">
                   Preguntas <br /> Frecuentes
                 </h1>
               </div>
@@ -211,18 +215,37 @@ class Landing extends Component {
         </div>
 
         <div className="footer">
-          <div className="container">
-            <div className="d-flex">
-              <img
-                src={LogoText}
-                alt="Elemental"
-                className="img-fluid"
-                width="250"
-              />
-              <p>Copyright Elemental Platform</p>
-              <a href="#">Quienes somos</a>
-              <a href="#">Terminos & Condiciones</a>
-            </div>
+          <div>
+            <img
+              src={LogoText}
+              alt="Elemental"
+              className="img-fluid"
+              width="200"
+            />
+          </div>
+          <div>
+            <small className="m-0">Copyright Elemental Platform</small>
+          </div>
+          <div>
+            <a>
+              <small className="link-footer-text">Quiénes somos</small>
+            </a>
+          </div>
+          <div>
+            <a>
+              <small className="link-footer-text">Términos y Condiciones</small>
+            </a>
+          </div>
+          <div>
+            <a className="link-footer">
+              <Icon className="icon-footer" size={14} icon={share2} />
+            </a>
+            <a className="link-footer">
+              <Icon className="icon-footer" size={18} icon={facebook} />
+            </a>
+            <a className="link-footer">
+              <Icon className="icon-footer" size={18} icon={instagram} />
+            </a>
           </div>
         </div>
       </div>
