@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800,900&display=swap");
 html,
 body {
   position: relative;
   height: 100%;
+  font-family: "Montserrat" !important;
+}
+.text-primary-section {
+  color: #7fd858 !important;
 }
 /*Section header*/
 .header {
@@ -17,6 +22,21 @@ body {
   align-items: center;
   color: #fff;
   padding: 20px;
+}
+
+.subtitle-logo {
+  position: relative;
+  top: -20px;
+  left: 0px;
+  font-size: 3.3vw;
+  text-align: center;
+}
+.title-opt {
+  font-size: 5vw;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  text-align: center;
 }
 .opt-text {
   display: flex;
@@ -38,14 +58,36 @@ body {
 .section-1 {
   padding: 100px 0px;
 }
+.title-section {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.text-section {
+  line-height: 35px;
+}
+.text-sponsor {
+  line-height: 22px;
+}
 .media-elemental {
   background-image: url("../images/app.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 240px;
+  min-width: 300px;
   min-height: 315px;
   box-shadow: 0px 2px 10px 1px rgba(0, 0, 0, 0.36);
+}
+.content-sponsor {
+  margin-top: 95px;
+}
+
+.p-sponsor {
+  padding: 0px 35px !important;
+}
+.divider-center {
+  padding: 0px 35px !important;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 /*Section*/
@@ -73,8 +115,22 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 400px;
+  height: 600px;
   width: 50%;
+  position: relative;
+}
+.banner-left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.banner-left div {
+  color: #fff;
+  z-index: 999;
 }
 .banner-right {
   background-image: url("../images/food.jpg");
@@ -86,8 +142,30 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 400px;
+  height: 600px;
   width: 50%;
+  position: relative;
+}
+.banner-right:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+.banner-right div {
+  color: #fff;
+  z-index: 999;
+}
+
+.content-text-banner {
+  text-align: center;
+  margin: 0px 65px;
+  padding: 30px 25px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .footer {
@@ -95,4 +173,5 @@ body {
   background-color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
