@@ -5,6 +5,7 @@ import { Icon } from "react-icons-kit";
 import { iosArrowLeft } from "react-icons-kit/ionicons/iosArrowLeft";
 import { iosCheckmarkOutline } from "react-icons-kit/ionicons/iosCheckmarkOutline";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import ButtonPrimaryOutlined from "../../components/button-primary-outlined";
 
 class FormSix extends Component {
   render() {
@@ -22,9 +23,16 @@ class FormSix extends Component {
               <Link to="/edad" className="link-back">
                 <Icon icon={iosArrowLeft} className="float-left" size={34} />
               </Link>
-              <Icon size={50} icon={iosCheckmarkOutline} />
             </h2>
-            <div className="content-form"></div>
+            <div className="content-form">
+              <Icon size={100} icon={iosCheckmarkOutline} />
+              <div>
+                <h4 className="text-center">
+                  Su pago se ha realizado <br /> exitosamente gracias
+                </h4>
+              </div>
+              <ButtonPrimaryOutlined>Home</ButtonPrimaryOutlined>
+            </div>
           </div>
         </div>
       </div>

@@ -16,6 +16,11 @@ a:hover {
 .text-primary-section {
   color: #7fd858 !important;
 }
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
 /*Section header*/
 .header {
   background-image: url("../images/bg-header.jpg");
@@ -289,6 +294,20 @@ a:hover {
   color: #fff;
   padding: 20px;
 }
+.bg-form-payment {
+  background-image: url("../images/banner2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 20px;
+}
 
 .link-back {
   color: #fff;
@@ -345,11 +364,34 @@ a:hover {
   border-radius: 10px;
   cursor: pointer;
 }
+.input-form {
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  color: #fff !important;
+  transition: border-width 0.3s ease-in-out;
+}
+.input-form:focus {
+  border-color: #fff !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  border-width: 2px !important;
+}
+.btn-primary-outlined {
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  padding: 10px 75px !important;
+}
 @media (max-width: 576px) {
   .card-form {
     width: 100%;
   }
   .content-form {
     padding: 0px 15px;
+  }
+  .bg-form-payment {
+    height: auto;
   }
 }
